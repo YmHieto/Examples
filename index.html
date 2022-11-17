@@ -8,7 +8,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
-	<link rel="stylesheet" href="./libs/bootstrap/icons/bootstrap-icons.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
@@ -29,11 +29,35 @@
 	<main>
 
 		<div class="container mt-5">
-			<h1>Github Pages!!</h1>
-			<p>
-				GitHubでもWebサイトを公開する事ができます!!
-			</p>
+
+			<h1>カルーセル</h1>
+			<div id="carouselExample" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" alt="First" src="./images/logo_html.png">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" alt="First" src="./images/logo_css.png">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" alt="First" src="./images/logo_javascript.png">
+					</div>
+				</div>
+			</div>
+
+			<h1>コントローラ</h1>
+			<div class="control-buttons my-3">
+				<input type="button" class="btn btn-primary start-slide" value="開始">
+				<input type="button" class="btn btn-primary pause-slide" value="停止">
+				<input type="button" class="btn btn-primary prev-slide" value="前へ">
+				<input type="button" class="btn btn-primary next-slide" value="次へ">
+				<input type="button" class="btn btn-primary slide-first" value="第1">
+				<input type="button" class="btn btn-primary slide-second" value="第2">
+				<input type="button" class="btn btn-primary slide-third" value="第3">
+			</div>
 		</div>
+	</main>
+	<!-- Main(End) -->
 
 	<!-- Footer(Start) -->
 	<footer>
